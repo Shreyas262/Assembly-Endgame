@@ -1,0 +1,60 @@
+.title{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.title h1{
+    color: rgba(249, 244, 218, 1);
+    font-weight: 500;
+    font-size: 2rem;
+}
+
+.title p{
+    color: rgba(142, 142, 142, 1);
+    font-weight: 400;
+    font-size: 1rem;
+    margin-top: -0.75rem;
+    max-width: 400px;
+}
+
+.status-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    background-color: green;
+    max-width: 100%;
+    min-width: 400px;
+    border-radius: 4px;
+    padding: 5px;
+    margin-block: 20px;
+}
+
+.status-section h2{
+    font-size: 1.75rem;
+    font-weight: 500;
+    margin: 4px;
+}
+
+.status-section p{
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin: 4px;
+}
+
+.languages-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 600px;
+}
+
+.languages-container p{
+    font-size: 1.3rem;
+    font-weight: 400;
+    margin: 4px;
+    padding: 5px;
+    border-radius: 4px;
+}

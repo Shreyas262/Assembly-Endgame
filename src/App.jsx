@@ -1,15 +1,17 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import heroImg from './assets/hero.png'
+import { useState, useEffect, useRef } from 'react'
+import Header from './components/HeaderContent.jsx'
+import StatusSection from './components/StatusSection.jsx'
+import LanguageList from './components/LanguageList.jsx'
 import './App.css'
 
 function App() {
   
   return (
-    <>
-      
-    </>
+    <main>
+      <Header />
+      <StatusSection />
+      <LanguageList />
+    </main>
   )
 }
 
