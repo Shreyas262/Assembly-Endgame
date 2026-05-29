@@ -25,7 +25,7 @@
     align-items: center;
     color: white;
     background-color: green;
-    max-width: 100%;
+    max-width: 650px;
     min-width: 400px;
     border-radius: 4px;
     padding: 5px;
@@ -33,13 +33,13 @@
 }
 
 .status-section h2{
-    font-size: 1.75rem;
+    font-size: 1.6rem;
     font-weight: 500;
     margin: 4px;
 }
 
 .status-section p{
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: 400;
     margin: 4px;
 }
@@ -48,13 +48,63 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
     max-width: 600px;
+    margin-bottom: 36px;
 }
 
 .languages-container p{
-    font-size: 1.3rem;
+    font-size: 1rem;
     font-weight: 400;
     margin: 4px;
-    padding: 5px;
+    padding: 4px;
     border-radius: 4px;
+}
+
+.current-word-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+    text-align: center;
+    padding: 6px;
+    min-width: 300px;
+    margin-bottom: 30px;
+}
+
+.letter-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: rgba(249, 244, 218, 1);
+    width: 40px;
+    height: 40px;
+    background-color: rgba(50, 50, 50, 1);
+    border-bottom: 1px solid rgba(249, 244, 218, 1)
+}
+
+.keyboard-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+    max-width: 480px;
+}
+
+.key{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(252, 186, 41, 1);
+    border: 1px solid rgba(215, 215, 215, 1);
+    border-radius: 4px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    cursor: pointer;
 }
