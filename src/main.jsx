@@ -4,7 +4,6 @@ import './index.css'
 import AssemblyEndgame from './App.jsx'
 
 createRoot(document.getElementById('root')).render(
-  <StrictMode>
+  
     <AssemblyEndgame />
-  </StrictMode>,
 )

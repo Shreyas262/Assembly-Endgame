@@ -22,14 +22,27 @@
 .status-section{
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    color: white;
-    background-color: green;
-    max-width: 650px;
-    min-width: 400px;
+    color: #F9F4DA;;
+    width: 480px;
+    min-height: 90px;
     border-radius: 4px;
     padding: 5px;
-    margin-block: 20px;
+    margin-block: 30px;
+}
+
+.status-section.farewell{
+    background-color: #7A5EA7;
+    border: 1px dashed #323232;
+}
+
+.status-section.lost{
+    background-color: rgba(186, 42, 42, 1);
+}
+
+.status-section.won{
+    background-color: rgba(16, 169, 91, 1);
 }
 
 .status-section h2{
@@ -44,6 +57,27 @@
     margin: 4px;
 }
 
+.status-section > p.farewell-message {
+    font-style: italic;
+    font-weight: 400;
+    font-size: 1.25rem;
+}
+
+.attempts-remaining{
+    color: rgba(142, 142, 142, 1);
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+.attempts-remaining.lost{
+    color: rgba(186, 42, 42, 1);
+}
+
+.attempts-remaining.won{
+    color: rgba(16, 169, 91, 1);
+}
+
 .languages-container{
     display: flex;
     flex-direction: row;
@@ -53,12 +87,28 @@
     margin-bottom: 36px;
 }
 
-.languages-container p{
+.languages-container .chip{
     font-size: 1rem;
     font-weight: 400;
     margin: 4px;
     padding: 4px;
     border-radius: 4px;
+    position: relative;
+}
+
+.languages-container .chip.lost::before {
+    content: "💀";
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    font-size: 0.85rem;
+    top: 0;
+    left: 0;
+    opacity: 0.85;
+    background-color: rgba(0, 0, 0, 0.7);
 }
 
 .current-word-container{
@@ -84,6 +134,11 @@
     height: 40px;
     background-color: rgba(50, 50, 50, 1);
     border-bottom: 1px solid rgba(249, 244, 218, 1)
+}
+
+.letter-box.revealed{
+    background-color: #EC5D49;
+    border-bottom: none;
 }
 
 .keyboard-container{
@@ -116,6 +171,11 @@
 
 .keyboard-container > button.wrong{
     background-color: #EC5D49;
+}
+
+.keyboard-container > button:disabled{
+    cursor: not-allowed;
+    opacity: 0.5;
 }
 
 .new-game-btn{
