@@ -13,7 +13,7 @@ A fun word-guessing game inspired by Hangman, built with React. Players must cor
 
 ## Technologies Used
 
-- React
+- React19
 - JavaScript (ES6+)
 - CSS3
 
@@ -22,5 +22,7 @@ A fun word-guessing game inspired by Hangman, built with React. Players must cor
 1. Guess letters using the on-screen keyboard.
 2. Correct guesses reveal letters in the hidden word.
 3. Incorrect guesses eliminate a programming language.
-4. Guess the entire word before all languages are lost.
-5. Start a new game at any time using the **New Game** button.
+4. Incorrect guesses also reduces attempts.
+5. Guess the entire word before all languages are lost.
+6. Confetti is played after winning the game.
+7. Start a new game at any time using the **New Game** button.
